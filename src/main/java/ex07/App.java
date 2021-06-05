@@ -27,5 +27,30 @@ Create a new version of the program that allows you to choose feet or meters for
 Implement this program as a GUI program that automatically updates the values when any value changes.
 */
 
+import java.util.Scanner;
+
 public class App {
+    public static void main(String[] args) {
+
+        int length, width, area;
+        double areaMeters, constant;
+        constant = 0.09290304;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("What is the length of the room in feet? ");
+        length = sc.nextInt();
+
+        Scanner sc2 = new Scanner(System.in);
+        System.out.print("What is the width of the room in feet? ");
+        width = sc.nextInt();
+
+        String output = String.format("You entered the dimensions of %s and %s.", length, width);
+        System.out.println(output);
+
+        area = length * width;
+        areaMeters = area * constant;
+
+        String output1 = String.format("The area is\n%s square feet\n%s square meters\nThe formula for this conversion is m2 = f2 × %s", area, areaMeters, constant);
+        System.out.println(output1);
+    }
 }
