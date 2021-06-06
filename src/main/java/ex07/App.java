@@ -1,6 +1,10 @@
 package ex07;
 
 /*
+
+*  UCF COP3330 Summer 2021 Assignment 1 Solution
+*  Copyright 2021 Jeyler Zabala
+
 Exercise 7 - Area of a Rectangular Room
 When working in a global environment, you’ll have to present information in both metric and Imperial units.
 And you’ll need to know when to do the conversion to ensure the most accurate results.
@@ -40,7 +44,6 @@ public class App {
         System.out.print("What is the length of the room in feet? ");
         length = sc.nextInt();
 
-        Scanner sc2 = new Scanner(System.in);
         System.out.print("What is the width of the room in feet? ");
         width = sc.nextInt();
 
@@ -54,3 +57,5 @@ public class App {
         System.out.println(output1);
     }
 }
+
+
